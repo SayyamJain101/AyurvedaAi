@@ -1,7 +1,6 @@
 {
   "buildCommand": "pip install -r requirements.txt",
   "framework": "flask",
-  "pythonVersion": "3.11",
   "routes": [
     {
       "src": "/(.*)",
