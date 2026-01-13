@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Ayurveda & Nutritional Science - Wellness Through Ancient Wisdom{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <meta name="description" content="Discover Ayurveda and nutritional science with our intelligent chatbot powered by Groq AI.">
+    <meta name="keywords" content="Ayurveda, Nutrition, Health, Wellness, Doshas, Ayurvedic Medicine">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="navbar">
+            <div class="logo">🌿 Ayurveda Hub</div>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About Ayurveda</a></li>
+                    <li><a href="/benefits">Benefits</a></li>
+                    <li><a href="/conditions">Health Conditions</a></li>
+                    <li><a href="/chat">Chat with AI</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Ayurveda & Nutritional Science Hub. All rights reserved.</p>
+        <p>🙏 Dedicated to spreading ancient wisdom for modern wellness</p>
+        <p>Powered by <a href="https://groq.com" target="_blank">Groq AI</a></p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

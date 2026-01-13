@@ -1,0 +1,123 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Ayurveda & Nutritional Science{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero">
+    <h1>🌾 Balance Your Body & Mind</h1>
+    <p>Discover the ancient science of Ayurveda and nutritional wisdom for holistic wellness</p>
+    <a href="/chat" class="cta-button">Chat with AI Guide →</a>
+</section>
+
+<!-- Welcome Section -->
+<section>
+    <h2>Welcome to Ayurveda Hub</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>🧘 Ancient Wisdom</h3>
+            <p>Ayurveda, the "science of life," is a 5,000-year-old holistic healing system from India. It views health as a balance of three doshas: Vata, Pitta, and Kapha. Learn how this ancient science can transform your wellness journey.</p>
+        </div>
+        <div class="card">
+            <h3>🍃 Natural Healing</h3>
+            <p>Discover the power of natural herbs, spices, and traditional practices. Ayurveda emphasizes prevention through lifestyle, diet, and natural remedies rather than treating symptoms alone.</p>
+        </div>
+        <div class="card">
+            <h3>💡 Modern Science</h3>
+            <p>Modern nutritional science validates many Ayurvedic principles. Our AI chatbot combines ancient knowledge with contemporary research to provide personalized wellness guidance.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Three Doshas Overview -->
+<section>
+    <h2>The Three Doshas</h2>
+    <p style="text-align: center; margin-bottom: 2rem; color: #666;">The foundation of Ayurveda is the concept of three doshas - fundamental energies that govern all biological and psychological functions.</p>
+    
+    <div class="dosha-grid">
+        <!-- Vata Dosha -->
+        <div class="dosha-card">
+            <div class="dosha-icon">🌪️</div>
+            <h3>Vata</h3>
+            <p style="margin-bottom: 1rem;"><strong>Air + Space</strong></p>
+            <p style="margin-bottom: 1rem; color: #888; font-size: 0.95rem;">Governs movement, creativity, and communication</p>
+            <div class="properties">
+                <p><strong>When Balanced:</strong> Creativity, flexibility, joy</p>
+                <p><strong>When Imbalanced:</strong> Anxiety, insomnia, digestive issues</p>
+                <p><strong>Qualities:</strong> Light, dry, cold, mobile</p>
+            </div>
+        </div>
+
+        <!-- Pitta Dosha -->
+        <div class="dosha-card">
+            <div class="dosha-icon">🔥</div>
+            <h3>Pitta</h3>
+            <p style="margin-bottom: 1rem;"><strong>Fire + Water</strong></p>
+            <p style="margin-bottom: 1rem; color: #888; font-size: 0.95rem;">Governs digestion, metabolism, and willpower</p>
+            <div class="properties">
+                <p><strong>When Balanced:</strong> Confidence, intelligence, energy</p>
+                <p><strong>When Imbalanced:</strong> Anger, inflammation, heartburn</p>
+                <p><strong>Qualities:</strong> Hot, sharp, light, oily</p>
+            </div>
+        </div>
+
+        <!-- Kapha Dosha -->
+        <div class="dosha-card">
+            <div class="dosha-icon">💧</div>
+            <h3>Kapha</h3>
+            <p style="margin-bottom: 1rem;"><strong>Water + Earth</strong></p>
+            <p style="margin-bottom: 1rem; color: #888; font-size: 0.95rem;">Governs structure, stability, and immunity</p>
+            <div class="properties">
+                <p><strong>When Balanced:</strong> Strength, compassion, stability</p>
+                <p><strong>When Imbalanced:</strong> Sluggishness, weight gain, congestion</p>
+                <p><strong>Qualities:</strong> Heavy, moist, cold, stable</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Nutrition Section -->
+<section>
+    <h2>Ayurvedic Nutrition</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>🥘 Six Tastes</h3>
+            <p>Ayurvedic food classification includes six tastes: sweet, sour, salty, pungent, bitter, and astringent. Each taste has specific properties and benefits for different doshas and health conditions.</p>
+        </div>
+        <div class="card">
+            <h3>🌱 Seasonal Eating</h3>
+            <p>Eating according to seasons maintains dosha balance. Spring emphasizes light foods, summer cooling foods, autumn warm spices, and winter nourishing foods. This principle aligns with modern nutritional science.</p>
+        </div>
+        <div class="card">
+            <h3>🧪 Digestive Health</h3>
+            <p>"Agni" (digestive fire) is central to health in Ayurveda. Proper digestion prevents "ama" (toxins). Learn how to enhance digestion through food choices, timing, and lifestyle practices.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Quick Tips Section -->
+<section>
+    <h2>Quick Wellness Tips</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>🌅 Morning Routine</h3>
+            <p>• Wake with the sunrise<br>• Drink warm water with lemon<br>• Oil massage (Abhyanga)<br>• Gentle yoga and meditation<br>• Nourishing breakfast</p>
+        </div>
+        <div class="card">
+            <h3>🍽️ Eating Habits</h3>
+            <p>• Eat at regular times<br>• Avoid eating when stressed<br>• Chew food thoroughly<br>• No cold water during meals<br>• Light dinner 3 hours before sleep</p>
+        </div>
+        <div class="card">
+            <h3>😴 Sleep & Rest</h3>
+            <p>• Sleep 7-9 hours nightly<br>• Sleep by 10 PM (Kapha time)<br>• Warm milk before bed<br>• Bedroom should be cool and dark<br>• Avoid screens 1 hour before sleep</p>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section style="text-align: center; background-color: white; padding: 3rem; border-radius: 10px; box-shadow: 0 4px 15px rgba(139, 69, 19, 0.1);">
+    <h2>Ready to Transform Your Wellness?</h2>
+    <p style="font-size: 1.1rem; margin: 1.5rem 0; color: #666;">Chat with our AI-powered Ayurveda assistant for personalized guidance on health, nutrition, and wellness practices.</p>
+    <a href="/chat" class="cta-button">Start Your Journey →</a>
+</section>
+{% endblock %}

@@ -1,0 +1,160 @@
+{% extends "base.html" %}
+
+{% block title %}AI Chat - Ayurveda & Nutritional Science Hub{% endblock %}
+
+{% block content %}
+<section style="margin-top: 2rem;">
+    <h2>Chat with Ayurveda AI Guide</h2>
+    <p style="text-align: center; color: #666; font-size: 1.1rem; margin: 2rem 0;">🤖 Powered by Groq AI - Instant answers to your Ayurveda and nutrition questions</p>
+</section>
+
+<!-- Chatbot Container -->
+<div class="chatbot-container">
+    <!-- Chat Header -->
+    <div class="chat-header">
+        <h2>🌿 Ayurveda Assistant</h2>
+        <p style="margin: 0; font-size: 0.9rem; opacity: 0.9;">Ask me anything about Ayurveda, nutrition, and wellness</p>
+    </div>
+
+    <!-- Messages Container -->
+    <div class="messages" id="messagesContainer">
+        <!-- Messages will be added here by JavaScript -->
+    </div>
+
+    <!-- Input Area -->
+    <div class="input-area">
+        <input 
+            type="text" 
+            id="messageInput" 
+            placeholder="Type your question... (e.g., 'What is Pitta dosha?' or 'How to improve digestion?')"
+            autocomplete="off"
+        >
+        <button id="sendButton">Send</button>
+    </div>
+
+    <!-- Clear Button -->
+    <div style="padding: 0 1.5rem 1rem; text-align: center;">
+        <button class="clear-btn" id="clearButton">Clear Chat</button>
+    </div>
+</div>
+
+<!-- Example Questions -->
+<section style="margin-top: 3rem;">
+    <h2>Example Questions</h2>
+    <p style="text-align: center; color: #666; margin-bottom: 2rem;">Get started by asking about these topics:</p>
+    
+    <div class="grid">
+        <div class="card" style="cursor: pointer; transition: all 0.3s ease;">
+            <h3>📚 About Doshas</h3>
+            <p>"What are the three doshas?" or "How do I know my dosha type?"</p>
+        </div>
+        <div class="card" style="cursor: pointer; transition: all 0.3s ease;">
+            <h3>🥘 Nutrition</h3>
+            <p>"What should a Pitta person eat?" or "How do I improve digestion?"</p>
+        </div>
+        <div class="card" style="cursor: pointer; transition: all 0.3s ease;">
+            <h3>🌿 Herbs & Remedies</h3>
+            <p>"What is ashwagandha good for?" or "How to use turmeric for health?"</p>
+        </div>
+        <div class="card" style="cursor: pointer; transition: all 0.3s ease;">
+            <h3>😴 Sleep & Stress</h3>
+            <p>"How can Ayurveda help with insomnia?" or "Remedies for anxiety?"</p>
+        </div>
+        <div class="card" style="cursor: pointer; transition: all 0.3s ease;">
+            <h3>🧘 Practices</h3>
+            <p>"What is pranayama?" or "How to do oil massage?"</p>
+        </div>
+        <div class="card" style="cursor: pointer; transition: all 0.3s ease;">
+            <h3>💪 Health Issues</h3>
+            <p>"How does Ayurveda address arthritis?" or "Help with skin conditions?"</p>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section style="background-color: white; padding: 3rem; border-radius: 10px; box-shadow: 0 4px 15px rgba(139, 69, 19, 0.1);">
+    <h2>About Your AI Guide</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>🧠 Expert Knowledge</h3>
+            <p>Our AI chatbot is trained on comprehensive Ayurvedic principles, herbs, treatments, and modern nutritional science. It provides accurate, evidence-based information.</p>
+        </div>
+        <div class="card">
+            <h3>⚡ Powered by Groq AI</h3>
+            <p>Using Groq's advanced language model for fast, intelligent responses. Get detailed answers instantly without waiting.</p>
+        </div>
+        <div class="card">
+            <h3>🔄 Conversational Memory</h3>
+            <p>Your chat history is maintained during the session. Ask follow-up questions and the AI remembers context for personalized guidance.</p>
+        </div>
+        <div class="card">
+            <h3>📚 Continuous Learning</h3>
+            <p>Ask about doshas, herbs, conditions, treatments, lifestyle practices, nutrition, and more. The more you ask, the better guidance you'll receive.</p>
+        </div>
+        <div class="card">
+            <h3>🌍 Holistic Perspective</h3>
+            <p>Combines ancient Ayurvedic wisdom with modern scientific research. Provides comprehensive view of health covering body, mind, and spirit.</p>
+        </div>
+        <div class="card">
+            <h3>🎯 Practical Advice</h3>
+            <p>Get actionable recommendations you can implement immediately. From diet suggestions to lifestyle changes to herbal remedies.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Important Note -->
+<section style="background-color: #e3f2fd; padding: 2rem; border-radius: 10px; border-left: 4px solid #2196f3; margin: 3rem 0;">
+    <h3 style="color: #1976d2;">ℹ️ Disclaimer</h3>
+    <p>This AI chatbot provides educational information about Ayurveda and nutrition. It is not a substitute for professional medical advice. Always consult with qualified healthcare practitioners before making significant changes to your health regimen, especially for serious conditions or if you're on medications.</p>
+</section>
+
+<!-- Tips for Better Responses -->
+<section>
+    <h2>Tips for Better Responses</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>✏️ Be Specific</h3>
+            <p>Instead of "I have pain," try "I have joint pain in my knees, especially in the morning, and it's dry weather."</p>
+        </div>
+        <div class="card">
+            <h3>🎯 Ask Follow-ups</h3>
+            <p>The AI remembers context. Ask "Tell me more about..." or "How do I use..." for deeper exploration of topics.</p>
+        </div>
+        <div class="card">
+            <h3>📝 Share Context</h3>
+            <p>Mentioning your dosha type, age, season, or lifestyle helps the AI give more personalized guidance.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Privacy & Security -->
+<section style="background-color: #f5f5f5; padding: 2rem; border-radius: 10px; margin-top: 3rem;">
+    <h3 style="text-align: center; color: #333;">🔒 Privacy & Security</h3>
+    <p style="text-align: center; color: #666;">Your conversations are processed securely. Do not share sensitive personal information. The chat is cleared when you close the browser or use the "Clear Chat" button.</p>
+</section>
+{% endblock %}
+
+<!-- Scripts -->
+<script>
+    // Enhanced example card click handlers
+    document.addEventListener('DOMContentLoaded', function() {
+        // Add click handlers to example cards
+        const cards = document.querySelectorAll('section:nth-child(2) .card');
+        cards.forEach(card => {
+            card.addEventListener('click', function() {
+                // Find the paragraph text (example question)
+                const p = this.querySelector('p');
+                if (p) {
+                    const question = p.textContent.trim();
+                    // Set input value to first question
+                    const input = document.getElementById('messageInput');
+                    const firstQuestion = question.split('" or "')[0].replace(/"/g, '').trim();
+                    if (input) {
+                        input.value = firstQuestion;
+                        input.focus();
+                    }
+                }
+            });
+        });
+    });
+</script>
