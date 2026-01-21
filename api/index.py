@@ -159,5 +159,9 @@ def server_error(error):
     return jsonify({'error': 'Internal server error'}), 500
 
 
+# WSGI handler for Vercel
+handler = app
+
+
 # Export app for Vercel
 handler = app
