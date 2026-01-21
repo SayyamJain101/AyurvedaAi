@@ -157,3 +157,7 @@ def server_error(error):
     """Handle 500 errors"""
     logger.error(f"Server error: {str(error)}")
     return jsonify({'error': 'Internal server error'}), 500
+
+
+# Export app for Vercel
+handler = app

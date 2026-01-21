@@ -1,7 +1,7 @@
 import requests
 import json
 
-BASE_URL = "http://localhost:5000"
+BASE_URL = "http://localhost:5001"
 TEST_SESSION = "test_session_12345"
 
 print("\n" + "="*60)
