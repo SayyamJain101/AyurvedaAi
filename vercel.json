@@ -1,3 +1,3 @@
 {
-  "framework": "flask"
+  "buildCommand": "bash build.sh"
 }
