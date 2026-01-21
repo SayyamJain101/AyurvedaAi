@@ -7,11 +7,9 @@ from pathlib import Path
 
 # Setup path for templates and static files
 base_path = Path(__file__).parent.parent
-os_environ = os.environ.copy()
-os_environ['GROQ_API_KEY'] = os.getenv('GROQ_API_KEY', '')
 
 # Initialize Flask app
-app = Flask(__name__, template_folder=str(base_path / 'templates'), static_folder=str(base_path / 'static'))
+app = Flask(__name__, template_folder=str(base_path / 'templates'), static_folder=str(base_path / 'static'), static_url_path='/static')
 CORS(app)
 
 # Configure logging
@@ -157,10 +155,6 @@ def server_error(error):
     """Handle 500 errors"""
     logger.error(f"Server error: {str(error)}")
     return jsonify({'error': 'Internal server error'}), 500
-
-
-# WSGI handler for Vercel
-handler = app
 
 
 # Export app for Vercel
